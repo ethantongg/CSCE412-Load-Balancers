@@ -1,0 +1,54 @@
+# Doxyfile for Load Balancer Project Documentation
+
+# Project information
+PROJECT_NAME           = "Load Balancer Simulation"
+PROJECT_NUMBER         = "Version 1.0"
+PROJECT_BRIEF          = "A C++ implementation of a dynamic load balancer with web server management"
+
+# Output options
+OUTPUT_DIRECTORY       = .
+GENERATE_HTML          = YES
+GENERATE_LATEX         = NO
+HTML_OUTPUT            = html
+
+# Input files
+INPUT                  = . \
+                         main.cpp \
+                         LoadBalancer.h \
+                         LoadBalancer.cpp \
+                         WebServer.h \
+                         WebServer.cpp \
+                         Request.h
+                         
+FILE_PATTERNS          = *.cpp *.h
+RECURSIVE              = NO
+
+# Documentation options
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = YES
+EXTRACT_STATIC         = YES
+EXTRACT_LOCAL_CLASSES  = YES
+
+# Class diagrams
+HAVE_DOT               = NO
+CLASS_DIAGRAMS         = YES
+HIDE_UNDOC_RELATIONS   = NO
+CLASS_GRAPH            = YES
+COLLABORATION_GRAPH    = YES
+UML_LOOK               = YES
+
+# Other settings
+JAVADOC_AUTOBRIEF      = YES
+OPTIMIZE_OUTPUT_FOR_C  = NO
+BUILTIN_STL_SUPPORT    = YES
+
+# HTML output customization
+HTML_COLORSTYLE_HUE    = 220
+HTML_COLORSTYLE_SAT    = 100
+HTML_COLORSTYLE_GAMMA  = 80
+
+# Warnings
+QUIET                  = NO
+WARNINGS               = YES
+WARN_IF_UNDOCUMENTED   = YES
+WARN_IF_DOC_ERROR      = YES
